@@ -1,0 +1,106 @@
+{
+  "auth": {
+    "reactapp15cb6dd84": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL",
+          "NAME"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "reactapp144b08033CreateAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "reactapp144b08033DefineAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "reactapp144b08033VerifyAuthChallengeResponse": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_reactapp144b08033CreateAuthChallenge_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "reactapp144b08033CreateAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_reactapp144b08033CreateAuthChallenge_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "reactapp144b08033CreateAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_reactapp144b08033DefineAuthChallenge_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "reactapp144b08033DefineAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_reactapp144b08033DefineAuthChallenge_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "reactapp144b08033DefineAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_reactapp144b08033VerifyAuthChallengeResponse_RECAPTCHASECRET": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "reactapp144b08033VerifyAuthChallengeResponse"
+        }
+      ]
+    },
+    "AMPLIFY_function_reactapp144b08033VerifyAuthChallengeResponse_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "reactapp144b08033VerifyAuthChallengeResponse"
+        }
+      ]
+    },
+    "AMPLIFY_function_reactapp144b08033VerifyAuthChallengeResponse_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "reactapp144b08033VerifyAuthChallengeResponse"
+        }
+      ]
+    }
+  }
+}

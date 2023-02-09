@@ -1,0 +1,36 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactapp1-dev-15519-authRole",
+      "UnauthRoleArn": "arn:aws:iam::514483985985:role/amplify-reactapp1-dev-15519-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::514483985985:role/amplify-reactapp1-dev-15519-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-reactapp1-dev-15519-deployment",
+      "UnauthRoleName": "amplify-reactapp1-dev-15519-unauthRole",
+      "StackName": "amplify-reactapp1-dev-15519",
+      "StackId": "arn:aws:cloudformation:us-east-2:514483985985:stack/amplify-reactapp1-dev-15519/1c8c6880-a84f-11ed-b410-0a890c2d1e32",
+      "AmplifyAppId": "d2e4agin7d2hic"
+    },
+    "categories": {
+      "auth": {
+        "reactapp144b08033": {},
+        "reactapp15cb6dd84": {}
+      },
+      "function": {
+        "reactapp144b08033DefineAuthChallenge": {
+          "deploymentBucketName": "amplify-reactapp1-dev-15519-deployment",
+          "s3Key": "amplify-builds/reactapp144b08033DefineAuthChallenge-64434167643775585555-build.zip"
+        },
+        "reactapp144b08033CreateAuthChallenge": {
+          "deploymentBucketName": "amplify-reactapp1-dev-15519-deployment",
+          "s3Key": "amplify-builds/reactapp144b08033CreateAuthChallenge-53426563334533665765-build.zip"
+        },
+        "reactapp144b08033VerifyAuthChallengeResponse": {
+          "RECAPTCHASECRET": "",
+          "deploymentBucketName": "amplify-reactapp1-dev-15519-deployment",
+          "s3Key": "amplify-builds/reactapp144b08033VerifyAuthChallengeResponse-384644584f72574f7749-build.zip"
+        }
+      }
+    }
+  }
+}
